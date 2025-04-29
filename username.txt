@@ -1,0 +1,7 @@
+echo Username:%USERNAME%
+echo Windows Version:%VERSION%
+echo date:%date%
+echo time:%time%
+echo Day: %%
+ver
+pause

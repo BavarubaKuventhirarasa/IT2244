@@ -1,0 +1,28 @@
+mkdir critera_1
+cd critera_1
+mkdir standard_1
+mkdir standard_2
+mkdir standard_3
+mkdir standard_4
+mkdir standard_5
+cd..
+mkdir critera_2
+cd critera_2
+mkdir standard_1
+mkdir standard_2
+mkdir standard_3
+cd..
+mkdir critera_3
+cd critera_3
+mkdir standard_1
+mkdir standard_2 
+mkdir standard_3
+cd..
+mkdir critera_4
+cd critera_4
+mkdir standard_1
+mkdir standard_2
+mkdir standard_3
+mkdir critera_5
+mkdir critera_6
+mkdir critera_7
