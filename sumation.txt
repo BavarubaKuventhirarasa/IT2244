@@ -1,0 +1,28 @@
+echo "Who are you?"
+read name
+echo "Enter Number 1"
+read x
+echo "Enter Number 2"
+read y
+echo "Enter Number 3"
+read z
+sum=$(($x+$y+$z))
+avg=$(($sum/3))
+echo "Hi" $name
+echo "Summation " $sum
+echo "Average " $avg
+
+Exercise read two number from user and print 
+addition,substraction,multiply and division
+
+Who are you?
+Bavaruba
+Enter Number 1
+20
+Enter Number 2
+30
+Enter Number 3
+40
+Hi Bavaruba
+Summation  90
+Average  30
