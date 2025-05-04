@@ -1,0 +1,119 @@
+1)Get the calender and date
+cal - for calender
+date - for date
+
+2)Get the student name and marks for the 3 subjects from user then calculates total and average
+read -p "Enter the Student name:" name
+read -p "Enter marks for subject1: "m1
+read -p "Enter marks for subject2: "m2
+read -p "Enter marks for subject3: "m3
+
+total=$((m1+m2+m3))
+average=$((total/3))
+
+echo "Student Name : $name"
+echo "Student total marks : $total"
+echo "Student Average marks : $average"
+
+3)Create calculator with arithmetic operators 
+#Get 2 numbers from user
+read -p "Enter first number: "a
+read -p "Enter second number: "b
+
+#get the operators from the user
+echo "Choose Operation : + - * /"
+read -p "Enter Operator: "op
+
+#perform the calculations
+case $op in
++) result = $((a+b))
+	echo $result;;
+-) result = $((a-b))
+	echo $result;;
+\*) result = $((a*b))
+	echo $result;;
+/) if["$b" -ne 0];then
+	result=$(echo "scale = 2; $a/$b")
+	echo "Result : $a/$b=$result"
+	else
+	echo "Error: Division by zero not allowed"
+	fi;;
+	esac
+
+4)get the days  based on the user input
+output Enter the number :
+5
+Friday
+
+
+echo "Enter the number within 1 -7: "
+read number
+case $number in
+	1)echo "Monday";;
+	2)echo "Tuesday";;
+	3)echo "Wednesday";;
+	4)echo "Thursday";;
+	5)echo "Friday";;
+	6)echo "Saturday";;
+	7)echo "Sunday";;
+	*)echo "Please enter the number  within 1 to 7";
+esac
+
+5)Verify whether your username is correct or not.(use your name as a)
+output - Enter user name:
+Mino
+username is correct
+username is incorrect
+
+username = $("Ruba")
+echo "Enter the username: "
+read Entername
+if[$username -gt $Entername];then
+	echo "Username is correct."
+else
+	echo "Username is incorrect."
+fi
+
+6)Output: - Enter two numbers:
+::7 5
+::7 is greater than 5
+:: - Enter two numbers:
+::1 9
+::1 is less than 9
+
+echo "Enter the number 1: "
+read number1
+echo "Enter the number 2 :"
+read number2
+if($number1>$number2)
+	echo $number "is greater than " $number
+else
+	echo $number "is less  than " $number2
+fi
+
+7) create a simple calculator using expr command for question 3
+#Get 2 numbers from user
+read -p "Enter first number: "a
+read -p "Enter second number: "b
+
+#get the operators from the user
+echo "Choose Operation : + - * /"
+read -p "Enter Operator: "op
+
+#perform the calculations
+case $op in
++) result = $(expr $a+$b)
+	echo $result;;
+-) result = $(expr $a-$b)
+	echo $result;;
+\*) result = $(expr $a \* $b)
+	echo $result;;
+/) if["$b" -ne 0];then
+	result=$(echo "scale = 2; $a/$b")
+	echo "Result : $a/$b=$result"
+	else
+	echo "Error: Division by zero not allowed"
+	fi;;
+	*)
+	echo "Invalid operator";;
+	esac
