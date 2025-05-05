@@ -1,0 +1,30 @@
+Q3>Multiples of 3 between 1 and 50:
+3 6 9 12 15 18...
+
+@echo off
+let i=3
+while [ $i -le 50 ]
+do
+ echo $i 
+i=$(($i+3))
+
+done 
+
+output:-
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+33
+36
+39
+42
+45
+48
+----------

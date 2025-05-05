@@ -1,0 +1,46 @@
+Q1>Fibonacci series
+output-first 10 fibonacci numbers:
+0 1 1 2 3 5 8 13 21 34
+
+Q1>
+@echo off
+echo "Enter the number:"
+read num
+
+a=0
+b=1
+
+x=$(($a+$b))
+for((i=0;i<num;i++))
+do
+ echo $a
+ echo " "
+ 
+ c=$(($a+$b))
+ a=$b 
+ b=$c
+done
+
+output:-
+Enter the number:
+10
+0
+
+1
+
+1
+
+2
+
+3
+
+5
+
+8
+
+13
+
+21
+
+34
+------
