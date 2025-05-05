@@ -1,0 +1,24 @@
+Q2>sum of the first 10 fibonacci numbers:88::Q2)
+	::Fibonacci series
+	::0 1 1 2 3 5 8 13 21 34
+	::sum of the series: 88
+
+
+
+a=0
+b=1
+sum=0
+
+echo "Fibonacci Series:"
+
+for ((i=0; i<10; i++))
+do
+    echo -n "$a "
+    sum=$(($sum + $a))
+    temp=$b
+    b=$(($a + $b))
+    a=$temp
+done
+
+echo
+echo "Sum of the series: $sum"
