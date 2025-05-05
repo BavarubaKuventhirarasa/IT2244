@@ -1,0 +1,13 @@
+1>print multiplication table using for loop
+  1*2 =2
+  2*2 =4
+  ......
+  
+  
+  for((i=1;i<=12;i++))
+  do
+  mul=$(($i*2))
+  echo $i "*2=" $mul
+  done
+  
+
